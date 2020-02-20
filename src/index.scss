@@ -10,11 +10,11 @@
   border: 0;
   border-radius: 45px;
   padding: 14px 66px;
-  outline: rgba(0,0,0,1);
+  outline: none;
 }
 .title-section{
     font-size: 24px;
-    padding-left: 10px;
+    padding-left: 20px;
     &::after{
         content: '';
         margin-top: 5px;
@@ -68,8 +68,9 @@
           margin-top: 10px;
           display: flex;
           align-items: center;
+          padding-left: 20px;
           .image-circle{
-              padding-left: 10px;
+              // padding-left: 10px;
             width: 60px;
             height: 60px;
               img{
@@ -99,7 +100,7 @@
     }
 
     .panel-description{
-        margin-top: 30px;
+        margin: 30px 0;
         padding: 20px;
         text-align: center;
         p{
@@ -111,5 +112,34 @@
         }
     }
 
+  }
+}
+
+.abilities {
+  padding: 50px 0;
+  background-color: #F9F9FB;
+  .abilities-list{
+    margin: 46px 0;
+    .item{
+      display: flex;
+      align-items: center;
+      padding-left: 20px;
+      margin: 30px 0;
+      .img{
+        width: 62px;
+        height: 62px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        img{
+          width: 100%;
+          border-radius: 10px;
+        }
+      }
+      p{
+        padding-left: 20px;
+        margin: 0;
+        font-size: 20px;
+      }
+    }
   }
 }

@@ -1,14 +1,15 @@
 import React from 'react';
 import Header from './components/layout/header';
 import About from './components/layout/about';
-import Footer from './components/layout/footer';
+import Abilities from './components/layout/abilities';
 
 function App() {
   return (
     <div className="App">
       <Header/>
       <About/>
-      {/* <Footer/> */}
+      <Abilities/>
+      <div style={{ height: '100vh' }}></div>
     </div>
   );
 }

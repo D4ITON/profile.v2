@@ -2,12 +2,12 @@ import img_react from '../../../assets/logo-react.png';
 import img_js from '../../../assets/logo-js.png';
 import img_html from '../../../assets/logo-html.png';
 import img_express from '../../../assets/logo-express.png';
-import img_laravel from '../../../assets/logo-laravel.png';
+import img_laravel from '../../../assets/logo-laravel.jpg';
 import img_php from '../../../assets/logo-php.png';
 
 
 
-export const habilities = [
+const abilities = [
     {
         id: 1,
         img: img_react,
@@ -39,3 +39,5 @@ export const habilities = [
         title: 'Php'
     },
 ]
+
+export default abilities;

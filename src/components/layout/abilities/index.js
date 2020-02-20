@@ -1,5 +1,6 @@
 import React from 'react';
 import abilities from './abilities';
+import img_react from '../../../assets/logo-react.png';
 
 const Abilities = () => {
     
@@ -9,7 +10,10 @@ const Abilities = () => {
             <div className="abilities-list">
                 {
                     abilities.map(item => (
-                    <div className="item">{item.title}</div>
+                        <div className="item" key={item.id}>
+                            <div className="img"><img src={item.img} alt="image"/></div>
+                            <p>{item.title}</p>
+                        </div>
                     ))
                 }
             </div>
