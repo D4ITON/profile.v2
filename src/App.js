@@ -3,6 +3,8 @@ import Header from './components/layout/header';
 import About from './components/layout/about';
 import Abilities from './components/layout/abilities';
 import Portafolio from './components/layout/portafolio';
+import Contacto from './components/layout/contacto';
+import Footer from './components/layout/footer';
 
 function App() {
   return (
@@ -11,7 +13,8 @@ function App() {
       <About/>
       <Abilities/>
       <Portafolio/>
-      <div style={{ height: '100vh' }}></div>
+      <Contacto/>
+      <Footer/>
     </div>
   );
 }
