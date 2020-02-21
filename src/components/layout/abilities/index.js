@@ -5,7 +5,7 @@ import img_react from '../../../assets/logo-react.png';
 const Abilities = () => {
     
     return (
-        <div className="abilities">
+        <div className="abilities" id="abilities">
             <h2 className="title-section">Mis habilidades</h2>
             <div className="abilities-list">
                 {

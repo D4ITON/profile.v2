@@ -7,7 +7,7 @@ import icon_whatsapp from '../../../assets/whatsapp.png';
 const Contacto = () => { 
     return (
         <div>
-            <div className="about contacto">
+            <div className="about contacto" id="contacto">
                 <h2 className="title-section">Contacto</h2>
                 <div className="panel">
                     <div className="panel-header">

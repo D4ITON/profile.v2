@@ -25,36 +25,80 @@
         background-color: #1DB954;
     }
 }
+
+.modal-content{
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgb(0,0,0);
+  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(119,66,66,1) 100%);
+  p{
+    font-size: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #F9F9FB;
+    color: white;
+    margin-bottom: 30px;
+  }
+  a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    margin: 20px 0;
+  }
+}
+#modal{
+  display: none;
+}
+#modal:checked ~.modal-content{
+  display: flex;
+}
+
+.modal-container{
+  img{
+    position: absolute;
+    z-index: 100;
+    right: 0;
+    top: 15px;
+    padding-right: 20px;
+    background-color: rgba(0,0,0,0);
+    border: none;
+    outline: rgba(0,0,0,1);
+  }
+}
+
 .header{
   height: 100vh;
   background: rgb(0,0,0);
   background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(119,66,66,1) 100%);
   text-align: center;
-  position: relative;
-  .menu{
-    button{
-      position: absolute;
-      right: 0;
-      top: 15px;
-      padding-right: 20px;
-      background-color: rgba(0,0,0,0);
-      border: none;
-      outline: rgba(0,0,0,1);
-    }
-  }
-  .image{
+  .h-image{
+    padding-top: 20vh;
+    margin-bottom: 48px;
     img{
       width: 250px;
       height: 250px;
       border-radius: 50%;
     }
   }
-  h1{
-    font-size: 20px;
+  .h-text{
+    h1{
+      color: white;
+      font-size: 20px;
+    }
+    p{
+      // margin: 0;
+      font-size: 16px;
+      color: #CCCCCC;
+    }
   }
-  p{
-    font-size: 16px;
-    color: #CCCCCC;
+  .h-button{
+    margin-top: 35px;
+    button{
+      outline: rgba(0,0,0,0);
+    }
   }
 }
 

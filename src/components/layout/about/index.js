@@ -4,7 +4,7 @@ import profile_icon from '../../../assets/profile-icon.jpg';
 const About = () => { 
     return (
         <div>
-            <div className="about">
+            <div className="about" id="about">
                 <h2 className="title-section">Sobre mí</h2>
                 <div className="panel">
                     <div className="panel-header">

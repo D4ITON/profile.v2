@@ -6,7 +6,7 @@ import projects from './projects';
 
 const Portafolio = () => { 
     return (
-        <div className="portafolio">
+        <div className="portafolio" id="portafolio">
             <h2 className="title-section">Mi portafolio</h2>
             <div className="pf-list">
                 {
