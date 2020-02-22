@@ -517,4 +517,25 @@
       }
     }
   }
+
+  .footer{
+    padding: 80px 6% 0;
+    .f-content{
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+
+      .f-name{
+        margin-top: 0;
+      }
+
+      .f-hello{
+        margin-top: 0;
+      }
+    }
+
+    .f-cright{
+      margin-top: 60px;
+    }
+  }
 }
