@@ -15,9 +15,9 @@ const Footer = () => {
                 </div>
                 <div className="f-about">
                     <p>Sobre</p>
-                    <a href="#">Sobre mí</a>
-                    <a href="#">Mis habilidades</a>
-                    <a href="#">Portafolio</a>
+                    <a href="#about">Sobre mí</a>
+                    <a href="#abilities">Mis habilidades</a>
+                    <a href="#portafolio">Portafolio</a>
                 </div>
                 <div className="f-hello">
                     <b>Di hola</b>

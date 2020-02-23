@@ -1,8 +1,6 @@
-/**
-  * Created by: Dalthon
-  */
-
-// mobile first
+/*
+ *  Created by: Dalthon
+ */
 
 *{
   box-sizing: border-box;
@@ -17,6 +15,7 @@
   border-radius: 45px;
   padding: 14px 66px;
   outline: none;
+  cursor: pointer;
 }
 .title-section{
     font-size: 24px;
@@ -75,6 +74,13 @@
     outline: rgba(0,0,0,1);
   }
 }
+
+
+/*
+        ===========================================================
+                              Mobile version
+        ===========================================================
+*/
 
 .header{
   height: 100vh;
@@ -302,7 +308,7 @@
   }
 }
 
-
+// footer mobile
 .footer{
   padding: 46px 20px 0;
   background-color: #F0F4F7;
@@ -330,6 +336,7 @@
       display: block;
       font-size: 14px;
       color: #707070;
+      text-decoration: none;
     }
   }
 
@@ -359,7 +366,12 @@
 
 }
 
-// Tablet version
+/*
+        ===========================================================
+                              Tablet version
+        ===========================================================
+*/
+
  /* Small Devices, Tablets */
  @media only screen and (min-width : 768px) {
   .modal-container{
@@ -398,10 +410,16 @@
     }
     .h-text{
       position: absolute;
-      // bottom: 60px;
       bottom: 10%;
       z-index: 100;
       padding-left: 6%;
+      h1{
+        font-size: 1.7rem;
+      }
+      p{
+        font-size: 1.2rem;
+      margin-top: 8px;
+      }
     }
     .h-button{
       position: absolute;
@@ -536,6 +554,88 @@
 
     .f-cright{
       margin-top: 60px;
+    }
+  }
+}
+
+/*
+        ===========================================================
+                              Desktop version
+        ===========================================================
+*/
+
+@media only screen and (min-width : 992px) {
+  .App{
+    background-color: #fafafa;
+  }
+  // header desktop
+  .header{
+    height: 405px;
+    &::after{
+      height: 405px;
+    }
+
+    .h-text{
+      bottom: 15%;
+      h1{
+        font-size: 2.5rem;
+      }
+    }
+  }
+
+  // about desktop
+  .about{
+    max-width: 935px;
+    margin: 50px auto;
+
+
+    .title-section{
+      padding: 0;
+      margin-bottom: 46px;
+    }
+
+    .panel{
+      margin: 0;
+      background-color: white;
+      border: none;
+      border: 1px solid rgba(var(--ce3,239,239,239),1);
+      border-radius: 4px;
+      grid-template-rows: max-content;
+
+      .panel-header{
+        border: none;
+        height: 72px;
+        border-bottom: 1px solid rgba(var(--ce3,239,239,239),1);
+
+        .image-circle{
+          width: 50px;
+          height: 50px;
+
+          img{
+            width: 50px;
+            height: 50px;
+          }
+        }
+      }
+
+      .panel-img{
+        height: 450px;
+        border-radius: 0 4px 4px 0;
+        img{
+          height: 450px;
+          border-radius: 0 4px 4px 0;
+        }
+      }
+
+      .panel-description{
+        margin: auto;
+        p{
+          letter-spacing: 0.06px;
+          padding-bottom: 80px;
+          border-bottom: 1px solid rgba(var(--ce3,239,239,239),1);
+          line-height: 23px;
+        }
+      }
     }
   }
 }
