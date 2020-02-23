@@ -174,7 +174,7 @@
 
 .abilities {
   padding: 50px 0;
-  background-color: #F9F9FB;
+  background-color: #FAFAFA;
   .a-container{
     .a-aside{
       display: none;
@@ -234,7 +234,17 @@
           padding-top: 25px;
           display: flex;
           justify-content: space-between;
+
+          .pf-item-ft-category{
+            display: flex;
+            align-items: center;
+            img{
+              padding-right: 5px;
+            }
+          }
+
           a{
+            text-decoration: none;
             color: #1DB954;
           }
         }
@@ -639,6 +649,7 @@
     }
   }
 
+  // abilities desktop
   .abilities{
     max-width: 935px;
     margin: 50px auto;
@@ -661,6 +672,32 @@
 
         .group{
           width: 100%;
+        }
+      }
+    }
+  }
+
+  // portafolio desktop
+  .portafolio{
+    max-width: 935px;
+    margin: 50px auto;
+
+    .title-section{
+      padding: 0;
+    }
+
+    .pf-list{
+      padding: 0;
+
+      .pf-item{
+        width: 30%;
+
+        .pf-item-body{
+          .pf-item-title{
+            margin-bottom: 9px;
+          }
+
+          
         }
       }
     }
