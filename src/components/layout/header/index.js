@@ -10,6 +10,15 @@ const Header = () => {
         console.log('Download Button');
     }
 
+   const darkMode = (event) => {
+       console.log('event');
+    // if(this.checked){
+    //     console.log('checked');
+    // }else{
+    //     console.log('no checked');
+    // }
+   }
+
     return (
         <React.Fragment>
             <div className="modal-container">
@@ -30,6 +39,10 @@ const Header = () => {
                     <a href="#abilities">Mis habilidades</a>
                     <a href="#portafolio">Portafolio</a>
                     <a href="#contacto">Contacto</a>
+                    <div>
+                        <label style={{ color: 'white' }} htmlFor="darkMode">Modo oscuro</label>
+                        <input type="checkbox" onChange={() => darkMode()} id="darkMode"/>
+                    </div>
                 </div>
             </div>
             <div className="header">

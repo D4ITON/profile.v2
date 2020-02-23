@@ -1,6 +1,6 @@
 import React from 'react'
-import icon_app from '../../../assets/app.png';
-import icon_web from '../../../assets/web.png';
+import * as ICON from '../../../assets/icons_svg';
+
 import projects from './projects';
 
 
@@ -17,7 +17,7 @@ const Portafolio = () => {
                                 <h3 className="pf-item-title">{pj.title}</h3>
                                 <p className="pf-item-desc">{pj.description}</p>
                                 <div className="pf-item-footer">
-                                    <div className="pf-item-ft-category"><img src={(pj.categoria == 'Mobile aplication') ? icon_app : icon_web} alt="icon-app"/>&nbsp;{pj.categoria}</div>
+                                    <div className="pf-item-ft-category"><ICON.MOBILE width={20} height={20} /><p>{pj.categoria}</p></div>
                                     <a href={pj.url}>Ver proyecto</a>
                                 </div>
                             </div>

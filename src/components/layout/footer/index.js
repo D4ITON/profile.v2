@@ -5,6 +5,10 @@ import logo_twitter from '../../../assets/twitter.png';
 import logo_github from '../../../assets/github.png';
 
 const Footer = () => {
+
+    var fecha = new Date();
+    var anio = fecha.getFullYear();
+
     return (
         <footer className="footer">
             <div className="f-content">
@@ -22,16 +26,19 @@ const Footer = () => {
                 <div className="f-hello">
                     <b>Di hola</b>
                     <div className="f-h-link">
-                        <a href="#"><img src={logo_github} alt="Logo Github"/></a>
-                        <a href="#"><img src={logo_linkedin} alt="Logo Linkedin"/></a>
-                        <a href="#"><img src={logo_twitter} alt="Logo Twitter"/></a>
+                        <a href="https://github.com/D4ITON"><img src={logo_github} alt="Logo Github"/></a>
+                        <a href="https://www.linkedin.com/in/dalthon-mamani-hualpa-816097161/"><img src={logo_linkedin} alt="Logo Linkedin"/></a>
+                        <a href="https://twitter.com/DalthonMamani"><img src={logo_twitter} alt="Logo Twitter"/></a>
                     </div>
                 </div>
             </div>
             <div className="f-cright">
-                <p>Dalthon Mamani © <span id="fecha">2020</span></p>
+                <p>Dalthon Mamani © {anio}</p>
             </div>
         </footer>
     )
 }
 export default Footer;
+
+
+

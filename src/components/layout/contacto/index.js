@@ -1,8 +1,6 @@
 import React from 'react';
 import profile_icon from '../../../assets/profile-icon.jpg';
-import icon_global from '../../../assets/global.png';
-import icon_email from '../../../assets/email.png';
-import icon_whatsapp from '../../../assets/whatsapp.png';
+import * as ICON from '../../../assets/icons_svg';
 
 const Contacto = () => { 
     return (
@@ -18,9 +16,9 @@ const Contacto = () => {
                     <button className="button-primary">Download CV</button>
                 </div>
                 <div className="c-p-redes">
-                    <div className="red-item"><img src={icon_whatsapp} alt=""/><p>(51) 930 392 725</p></div>
-                    <div className="red-item"><img src={icon_email} alt=""/><p>daitonmh100@gmail.com</p></div>
-                    <div className="red-item"><img src={icon_global} alt=""/><p>www.dalthon.ml</p></div>
+                    <div className="red-item"><ICON.WHATSAPP fill={'#fff'} width={25} height={25} /><p>(51) 930 392 725</p></div>
+                    <div className="red-item"><ICON.EMAIL fill={'#fff'} width={25} height={25} /><p>daitonmh100@gmail.com</p></div>
+                    <div className="red-item"><ICON.GLOBAL fill={'#fff'} width={25} height={25} /><p>www.dalthon.ml</p></div>
                 </div>
             </div>
         </div>
