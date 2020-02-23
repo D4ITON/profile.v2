@@ -638,4 +638,31 @@
       }
     }
   }
+
+  .abilities{
+    max-width: 935px;
+    margin: 50px auto;
+
+    .title-section{
+      padding-left: 0;
+    }
+
+    .a-container{
+      padding: 0;
+      justify-content: space-between;
+
+      .a-aside{
+        width: 45%;
+        justify-content: flex-start;
+      }
+
+      .abilities-list{
+        width: 55%;
+
+        .group{
+          width: 100%;
+        }
+      }
+    }
+  }
 }
