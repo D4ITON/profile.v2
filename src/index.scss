@@ -15,10 +15,43 @@
 }
 
 $base-color: #1DB954;
-
 $light-color: #FAFAFA;
 $dark-color: rgb(18,18,18); //hex -> #121212
 
+
+/* Scrollbar styles */ 
+
+$scrollbar_track_border: #D5D3D3;
+$scrollbar_track_background: #ECECEC;
+$scrollbar_thumb_background: #B1B1B4;
+
+.App.darkmode{
+  $scrollbar_track_border: #24242B;
+  $scrollbar_track_background: #191922;
+  $scrollbar_thumb_background: #52525D;
+}
+
+/* scrollbar style */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-left: 1px solid $scrollbar_track_border;
+  background-color: $scrollbar_track_background;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba($scrollbar_thumb_background, .8);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba($scrollbar_thumb_background, 1);
+}
 
 
 $theme-color: $light-color;
@@ -532,6 +565,7 @@ $theme-color: $light-color;
     text-align: left;
     position: relative;
     z-index: 10;
+
     &::after{
       content: '';
       position: absolute;
@@ -543,24 +577,30 @@ $theme-color: $light-color;
       background: linear-gradient(0deg, rgba(43,43,43,1) 0%, rgba(255,255,255,0) 100%);
       z-index: -100;
     }
+
     .h-image{
       display: none;
       padding-top: 0;
       margin: 0;
     }
+
     .h-text{
       position: absolute;
       bottom: 10%;
       z-index: 100;
       padding-left: 6%;
+
       h1{
         font-size: 1.7rem;
       }
+
       p{
         font-size: 1.2rem;
-      margin-top: 8px;
+        margin-top: 8px;
       }
+
     }
+
     .h-button{
       position: absolute;
       top: 40px;
@@ -568,7 +608,9 @@ $theme-color: $light-color;
       z-index: 100;
       padding-left: 6%;
     }
+
   }
+
   .about{
     .panel{
       margin: 46px 6%;
@@ -639,7 +681,7 @@ $theme-color: $light-color;
   
   // contacto tablet
   .contacto{
-    padding: 50px 6%;
+    padding: 50px 6% 100px;
     .title-section{
       padding-left: 0;
     }
@@ -748,6 +790,7 @@ $theme-color: $light-color;
         height: 72px;
         border: 1px solid #DBDBDB;
         border-right: none;
+        border-radius: 4px 0 0 0;
 
         .image-circle{
           width: 42px;
@@ -783,6 +826,7 @@ $theme-color: $light-color;
         border: none;
         border-left: 1px solid #DBDBDB;
         border-bottom: 1px solid #DBDBDB;
+        border-radius: 0 0 0 4px;
 
         p{
           font-size: 14px;
@@ -861,7 +905,7 @@ $theme-color: $light-color;
   // contacto desktop
   .contacto{
     max-width: 935px;
-    margin: 50px auto;
+    margin: 50px auto 100px;
     padding: 0;
 
     .title-section{
@@ -883,6 +927,7 @@ $theme-color: $light-color;
 .App{
 
   &.darkmode{
+
     background-color: $dark-color;
     
     .title-section{

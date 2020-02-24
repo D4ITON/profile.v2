@@ -8,7 +8,7 @@ import Footer from './components/layout/footer';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App darkmode">
       <Header/>
       <About/>
       <Abilities/>
