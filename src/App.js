@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Context from './utils/context';
 
 import Header from './components/layout/header';
@@ -12,14 +12,37 @@ const App = () => {
 
   const [ darkMode, setDarkMode ] = useState(false);
 
-  const handleChangeDarkMode = (event) => {
-    // console.log(event.target.checked);
-    (event.target.checked) ? (
-      setDarkMode(true)
-    ) : (
-      setDarkMode(false)
-    )
+
+  const setDarkTheme = () => {
+    setDarkMode(true)
+    localStorage.setItem('theme', 'darkTheme')
   }
+
+  const setLightTheme = () => {
+    setDarkMode(false)
+    localStorage.removeItem('theme')
+  }
+
+  const handleChangeDarkMode = (event) => {
+
+    if(event.target.checked){
+      setDarkTheme();
+    } else {
+      setLightTheme();
+    }
+
+  }
+
+  const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
+  
+  useEffect(() => {
+    if(currentTheme) {
+      console.log(currentTheme);
+      setDarkTheme();
+    }
+  }, [])
+
+  
 
   return (
     <Context.Provider
@@ -28,7 +51,7 @@ const App = () => {
         handleChangeDarkMode: (event) => handleChangeDarkMode(event)
        }}
     >
-      <div className={ !darkMode ?'App' : 'App darkmode'} >
+      <div className={ !darkMode ?'App lightTheme' : 'App darkTheme'} >
         <Header/>
         <About/>
         <Abilities/>

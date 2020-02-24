@@ -25,7 +25,7 @@ $scrollbar_track_border: #D5D3D3;
 $scrollbar_track_background: #ECECEC;
 $scrollbar_thumb_background: #B1B1B4;
 
-.App.darkmode{
+.App.darkTheme{
   $scrollbar_track_border: #24242B;
   $scrollbar_track_background: #191922;
   $scrollbar_thumb_background: #52525D;
@@ -602,9 +602,10 @@ $theme-color: $light-color;
     }
 
     .h-button{
+      margin-top: 0;
       position: absolute;
       top: 40px;
-      top: 10%;
+      top: 15%;
       z-index: 100;
       padding-left: 6%;
     }
@@ -927,7 +928,7 @@ $theme-color: $light-color;
 // Darkmode
 .App{
 
-  &.darkmode{
+  &.darkTheme{
 
     background-color: $dark-color;
     
@@ -1032,3 +1033,5 @@ $theme-color: $light-color;
 
   }
 }
+
+// https://googlechromelabs.github.io/dark-mode-toggle/demo/index.html

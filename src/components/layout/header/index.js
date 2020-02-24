@@ -34,8 +34,8 @@ const Header = () => {
                     <a href="#portafolio">Portafolio</a>
                     <a href="#contacto">Contacto</a>
                     <div>
-                        <label style={{ color: 'white' }} htmlFor="darkMode">Modo oscuro</label>
-                        <input type="checkbox"  onChange={(e) => context.handleChangeDarkMode(e)} id="darkMode"/>
+                        <label style={{ color: 'white' }} htmlFor="inputTheme">Modo oscuro</label>
+                        <input type="checkbox" checked={context.darkmode} onChange={(e) => context.handleChangeDarkMode(e)} id="inputTheme"/>
                     </div>
                 </div>
             </div>
