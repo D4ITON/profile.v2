@@ -20,7 +20,7 @@ const Portafolio = () => {
                                 </div>
                                 <div className="pf-item-footer">
                                     <div className="pf-item-ft-category"><ICON.MOBILE width={20} height={20} /><p>{pj.categoria}</p></div>
-                                    <a href={pj.url}>Ver proyecto</a>
+                                    <a href={pj.url} target="_blank">Ver proyecto</a>
                                 </div>
                             </div>
                         </div>

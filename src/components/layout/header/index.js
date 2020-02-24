@@ -1,23 +1,17 @@
-import React from 'react'
-import menu_icon from '../../../assets/menu-icon.png'
+import React, { useContext } from 'react';
+import Context from '../../../utils/context';
+import menu_icon from '../../../assets/menu-icon.png';
+
+
 const Header = () => {
 
-    const menuButton = () => {
-        console.log('Menu button');
-    }
+
+    const context = useContext(Context);
 
     const downloadCVButton = () => {
         console.log('Download Button');
     }
 
-   const darkMode = (event) => {
-       console.log('event');
-    // if(this.checked){
-    //     console.log('checked');
-    // }else{
-    //     console.log('no checked');
-    // }
-   }
 
     return (
         <React.Fragment>
@@ -41,7 +35,7 @@ const Header = () => {
                     <a href="#contacto">Contacto</a>
                     <div>
                         <label style={{ color: 'white' }} htmlFor="darkMode">Modo oscuro</label>
-                        <input type="checkbox" onChange={() => darkMode()} id="darkMode"/>
+                        <input type="checkbox"  onChange={(e) => context.handleChangeDarkMode(e)} id="darkMode"/>
                     </div>
                 </div>
             </div>
