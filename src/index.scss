@@ -31,7 +31,7 @@ $theme-color: $light-color;
 
 .App{
   font-family: 'Lato', 'Arial' ,'San serif';
-  background-color: $dark-color;
+  background-color: #FAFAFA;
 }
 
 .button-primary{
@@ -53,8 +53,9 @@ $theme-color: $light-color;
 
 .title-section{
     font-size: 24px;
-    padding-left: 20px;
-    color: $theme-color;
+    // padding-left: 20px;
+    padding: 0 7%;
+    
     &::after{
         content: '';
         margin-top: 5px;
@@ -75,6 +76,7 @@ $theme-color: $light-color;
   align-items: center;
   background: rgb(0,0,0);
   background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(119,66,66,1) 100%);
+
   p{
     font-size: 20px;
     padding-bottom: 10px;
@@ -82,6 +84,7 @@ $theme-color: $light-color;
     color: white;
     margin-bottom: 30px;
   }
+
   a{
     text-decoration: none;
     color: white;
@@ -89,9 +92,11 @@ $theme-color: $light-color;
     margin: 20px 0;
   }
 }
+
 #modal{
   display: none;
 }
+
 #modal:checked ~.modal-content{
   display: flex;
   transition-delay:0.5s;
@@ -164,22 +169,22 @@ $theme-color: $light-color;
         border-top: 1px solid #ccc;
         border-bottom: 1px solid #ccc;
         margin-top: 46px;
-        color: $theme-color;
 
       .panel-header{
           margin-top: 10px;
           display: flex;
           align-items: center;
-          padding-left: 20px;
+          // padding-left: 20px;
+          padding-left: 7%;
 
           .image-circle{
-            width: 60px;
-            height: 60px;
+            width: 50px;
+            height: 50px;
 
               img{
                   border-radius: 50%;
-                  width: 60px;
-                  height: 60px;
+                  width: 50px;
+                  height: 50px;
               }
 
           }
@@ -187,12 +192,13 @@ $theme-color: $light-color;
             padding-left: 20px;
 
               h4{
-                font-size: 16px;
+                font-size: 14px;
                 margin: 0;
+                margin-bottom: 4px;
               }
 
               p{
-                  font-size: 14px;
+                  font-size: 12px;
                   margin: 0;
               }
 
@@ -208,8 +214,10 @@ $theme-color: $light-color;
 
     .panel-description{
         margin: 30px 0;
-        padding: 20px;
+        padding: 7%;
         text-align: center;
+        font-size: 14px;
+
         p{
             text-align: left;
             margin-bottom: 40px;
@@ -224,10 +232,7 @@ $theme-color: $light-color;
 
 .abilities {
   padding: 50px 0;
-  // background-color: #FAFAFA;
-  background-color: #282828;
-  // background-color: #23232D;
-  color: $theme-color;
+  background-color: #FAFAFA;
 
   .a-container{
     .a-aside{
@@ -240,7 +245,8 @@ $theme-color: $light-color;
       .item{
         display: flex;
         align-items: center;
-        padding-left: 20px;
+        // padding-left: 20px;
+        padding: 0 7%;
         margin: 30px 0;
 
         .img{
@@ -259,7 +265,7 @@ $theme-color: $light-color;
         p{
           padding-left: 20px;
           margin: 0;
-          font-size: 20px;
+          font-size: 16px;
         }
 
       }
@@ -271,15 +277,14 @@ $theme-color: $light-color;
   padding: 50px 0 16px 0;
 
   .pf-list{
-    padding: 20px;
+    // padding: 20px;
+    padding: 7%;
 
     .pf-item{
       // border: 1px solid #ccc;
       box-shadow: 9px 9px 22px -8px rgba(0,0,0,0.29);
       border-radius: 10px;
       margin: 30px 0;
-      background-color: #282828;
-      color: $theme-color;
 
       .pf-item-img{
         width: 100%;
@@ -293,19 +298,25 @@ $theme-color: $light-color;
 
       .pf-item-body{
         padding: 25px 20px 30px 20px;
+        height: 160px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
 
         .pf-item-title{
-          font-size: 20px;
+          font-size: 16px;
+          margin-bottom: 9px;
         }
 
         .pf-item-desc{
-          font-size: 16px;
+          font-size: 14px;
         }
 
         .pf-item-footer{
           padding-top: 25px;
           display: flex;
           justify-content: space-between;
+          font-size: 12px;
 
           .pf-item-ft-category{
             display: flex;
@@ -313,7 +324,7 @@ $theme-color: $light-color;
             // line-height: 16px;
 
             svg{
-              fill: $theme-color;
+              fill: #000;
             }
 
             p{
@@ -338,29 +349,28 @@ $theme-color: $light-color;
 .contacto{
     margin-top: 0;
     padding: 46px 0;
-    // background-color: #F9F9FB;
-    color: $theme-color;
+    background-color: #F9F9FB;
 
   .c-panel{
     border-top: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
     margin-top: 46px;
-    background-color: #282828;
 
     .c-p-header{
         margin-top: 10px;
         display: flex;
         align-items: center;
-        padding-left: 20px;
+        // padding-left: 20px;
+        padding: 0 7%;
 
         .image-circle{
-          width: 60px;
-          height: 60px;
+          width: 50px;
+          height: 50px;
 
             img{
                 border-radius: 50%;
-                width: 60px;
-                height: 60px;
+                width: 50px;
+                height: 50px;
             }
 
         }
@@ -369,12 +379,13 @@ $theme-color: $light-color;
           padding-left: 20px;
 
             h4{
-              font-size: 16px;
+              font-size: 14px;
               margin: 0;
+              margin-bottom: 4px;
             }
 
             p{
-                font-size: 14px;
+                font-size: 12px;
                 margin: 0;
             }
         }
@@ -400,12 +411,17 @@ $theme-color: $light-color;
 
       .red-item{
         margin: 20px 0;
-        padding-left: 20px;
+        // padding-left: 20px;
+        padding: 0 7%;
         display: flex;
         align-items: center;
+        font-size: 14px;
 
         svg{
-          fill: $theme-color;
+          path{
+            fill: #000;
+            
+          }
         }
 
         p{
@@ -420,7 +436,7 @@ $theme-color: $light-color;
 
 // footer mobile
 .footer{
-  padding: 46px 20px 0;
+  padding: 46px 7% 0;
   background-color: #F0F4F7;
 
   .f-name{
@@ -432,6 +448,7 @@ $theme-color: $light-color;
 
     h4{
       font-size: 20px;
+      margin-bottom: 5px;
     }
 
     p{
@@ -558,14 +575,17 @@ $theme-color: $light-color;
       display: grid;
       grid-template-columns: 50% 50%;
       grid-template-rows: 1fr;
-      border: 1px solid #ccc;
+      border: none;
+      border-left: 1px solid #ccc;
+
       .panel-header{
         margin-top: 0;
         padding: 10px 20px;
+        border-top: 1px solid #ccc;
         border-bottom: 1px solid #ccc;
-        border-left: 1px solid #ccc;
         height: 70px;
       }
+
       .panel-img{
         margin-top: 0;
         grid-column: 2/3;
@@ -577,6 +597,7 @@ $theme-color: $light-color;
       }
       .panel-description{
         margin: 0;
+        border-bottom: 1px solid #ccc;
       }
     }
   }
@@ -718,22 +739,32 @@ $theme-color: $light-color;
       margin: 0;
       background-color: white;
       border: none;
-      border: 1px solid rgba(var(--ce3,239,239,239),1);
+      // border: 1px solid #DBDBDB;
       border-radius: 4px;
       grid-template-rows: max-content;
 
       .panel-header{
         border: none;
         height: 72px;
-        border-bottom: 1px solid rgba(var(--ce3,239,239,239),1);
+        border: 1px solid #DBDBDB;
+        border-right: none;
 
         .image-circle{
-          width: 50px;
-          height: 50px;
+          width: 42px;
+          height: 42px;
 
           img{
-            width: 50px;
-            height: 50px;
+            width: 42px;
+            height: 42px;
+          }
+        }
+
+        .name-text{
+          h4{
+            font-size: 14px;
+          }
+          p{
+            font-size: 12px;
           }
         }
       }
@@ -748,11 +779,17 @@ $theme-color: $light-color;
       }
 
       .panel-description{
-        margin: auto;
+        // margin: auto;
+        border: none;
+        border-left: 1px solid #DBDBDB;
+        border-bottom: 1px solid #DBDBDB;
+
         p{
-          letter-spacing: 0.06px;
+          font-size: 14px;
+          letter-spacing: 0.085px;
+          padding-top: 25px;
           padding-bottom: 80px;
-          border-bottom: 1px solid rgba(var(--ce3,239,239,239),1);
+          border-bottom: 1px solid #DBDBDB;
           line-height: 23px;
         }
       }
@@ -803,11 +840,19 @@ $theme-color: $light-color;
         width: 30%;
 
         .pf-item-body{
+
           .pf-item-title{
-            margin-bottom: 9px;
+            font-size: 16px;
+            letter-spacing: 0.1px;
           }
 
+          .pf-item-desc{
+            font-size: 14px;
+          }
           
+          .pf-item-footer{
+            font-size: 12px;
+          }
         }
       }
     }
@@ -826,6 +871,118 @@ $theme-color: $light-color;
     .c-panel{
       padding: 20px;
       background-color: #FFF;
+      border: none;
+      border: 1px solid #DBDBDB;
     }
+  }
+}
+
+
+
+// Darkmode
+.App{
+
+  &.darkmode{
+    background-color: $dark-color;
+    
+    .title-section{
+      color: $theme-color;
+      
+    }
+
+    .about{
+      color: $theme-color;
+      
+    }
+
+    .abilities{
+      background-color: #282828;
+      color: $theme-color;
+
+    }
+
+    .portafolio{
+      .pf-list{
+        .pf-item{
+          background-color: #282828;
+          color: $theme-color;
+
+          .pf-item-body{
+            .pf-item-footer{
+              .pf-item-ft-category{
+                svg{
+                  fill: $theme-color;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .contacto{
+      background-color: #121212;
+      color: $theme-color;
+
+      .c-panel{
+        background-color: #282828;
+
+        .c-p-redes{
+          .red-item{
+            svg{
+              path{
+                fill: $theme-color;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .footer{
+      background-color: #23232D;
+      color: white;
+
+      .f-content{
+        .f-name{
+
+          img{
+            background-color: #ccc;
+            border-radius: 5px;
+            width: 40px;
+          }
+
+        }
+
+        .f-hello{
+          .f-h-link{
+            a{
+              img{
+                background-color: #CCC;
+                border-radius: 5px
+              }
+            }
+          }
+        }
+
+      }
+
+    }
+
+    // Darkmode desktop version
+    @media only screen and (min-width : 992px) {
+      .about{
+        .panel{
+          background-color: #282828;
+        }
+
+      }
+
+      .abilities{
+        background-color: inherit;
+      }
+
+    }
+
   }
 }

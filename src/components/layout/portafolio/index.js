@@ -14,8 +14,10 @@ const Portafolio = () => {
                         <div className="pf-item" key={pj.id}>
                             <div className="pf-item-img"><img src={pj.prev_img} alt={pj.title}/></div>
                             <div className="pf-item-body">
-                                <h3 className="pf-item-title">{pj.title}</h3>
-                                <p className="pf-item-desc">{pj.description}</p>
+                                <div>
+                                    <h3 className="pf-item-title">{pj.title}</h3>
+                                    <p className="pf-item-desc">{pj.description}</p>
+                                </div>
                                 <div className="pf-item-footer">
                                     <div className="pf-item-ft-category"><ICON.MOBILE width={20} height={20} /><p>{pj.categoria}</p></div>
                                     <a href={pj.url}>Ver proyecto</a>
