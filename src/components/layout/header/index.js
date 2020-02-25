@@ -1,7 +1,8 @@
 import React, { useContext } from 'react';
 import Context from '../../../utils/context';
 import menu_icon from '../../../assets/menu-icon.png';
-
+import sun_icon from '../../../assets/sun.png';
+import moon_icon from '../../../assets/moon.png';
 
 const Header = () => {
 
@@ -33,12 +34,14 @@ const Header = () => {
                     <a href="#abilities">Mis habilidades</a>
                     <a href="#portafolio">Portafolio</a>
                     <a href="#contacto">Contacto</a>
-                    <div>
-                        <label style={{ color: 'white' }} htmlFor="inputTheme">Modo oscuro</label>
-                        <input type="checkbox" checked={context.darkmode} onChange={(e) => context.handleChangeDarkMode(e)} id="inputTheme"/>
-                    </div>
                 </div>
             </div>
+
+            <div className="input-change-theme">
+                <label htmlFor="inputTheme"><img src={ !context.darkmode ? moon_icon : sun_icon  } /></label>
+                <input type="checkbox" id="inputTheme" checked={context.darkmode} onChange={(e) => context.handleChangeDarkMode(e)} />
+            </div>
+
             <div className="header">
                 <div className="h-image">
                     <img src="https://dl.dropboxusercontent.com/s/gl8h35m3bscxz3i/mobile-fondo.jpg?dl=0" alt="profile image"/>
@@ -60,3 +63,4 @@ export default Header;
 
 
 // cambiar https://www.dropbox.com/ por https://dl.dropboxusercontent.com/
+// Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>

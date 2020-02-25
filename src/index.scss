@@ -100,6 +100,7 @@ $theme-color: $light-color;
     }
 }
 
+// Modal style
 .modal-content{
   display: none;
   width: 100vw;
@@ -140,14 +141,26 @@ $theme-color: $light-color;
     position: absolute;
     z-index: 100;
     right: 0;
-    top: 15px;
-    padding-right: 20px;
+    // top: 15px;
+    // padding-right: 20px;
+    top: 3%;
+    right: 6%;
     background-color: rgba(0,0,0,0);
     border: none;
     outline: rgba(0,0,0,1);
   }
 }
 
+.input-change-theme{
+  position: absolute;
+  top: 3%;
+  left: 6%;
+  z-index: 200;
+
+  input{
+    display: none;
+  }
+}
 
 /*
         ===========================================================
@@ -555,6 +568,12 @@ $theme-color: $light-color;
   .title-section{
     padding-left: 6%;   
   }
+
+  .input-change-theme{
+    top: 3%;
+    left: inherit;
+    right: 3%;
+  }
   
   .header{
     background-image: url("https://dl.dropboxusercontent.com/s/67odh3k79wmck7x/desktop-fondo.jpg?dl=0");
@@ -752,6 +771,11 @@ $theme-color: $light-color;
 */
 
 @media only screen and (min-width : 992px) {
+
+  .input-change-theme{
+    right: 2%;
+  }
+
   // header desktop
   .header{
     height: 405px;
@@ -1033,5 +1057,3 @@ $theme-color: $light-color;
 
   }
 }
-
-// https://googlechromelabs.github.io/dark-mode-toggle/demo/index.html
