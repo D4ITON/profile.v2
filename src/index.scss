@@ -859,9 +859,11 @@ $theme-color: $light-color;
       .panel-img{
         height: 450px;
         border-radius: 0 4px 4px 0;
+
         img{
           height: 450px;
           border-radius: 0 4px 4px 0;
+          border: 1px solid #DBDBDB
         }
       }
 
