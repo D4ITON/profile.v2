@@ -19,7 +19,15 @@ const Portafolio = () => {
                                     <p className="pf-item-desc">{pj.description}</p>
                                 </div>
                                 <div className="pf-item-footer">
-                                    <div className="pf-item-ft-category"><ICON.MOBILE width={20} height={20} /><p>{pj.categoria}</p></div>
+                                    <div className="pf-item-ft-category">
+                                        {
+                                            (pj.categoria == 1 ) ? (
+                                                <ICON.GLOBAL width={20} height={20} />
+                                            ):(
+                                                <ICON.MOBILE width={20} height={20} />
+                                            )
+                                        }
+                                        <p>{pj.categoriaText}</p></div>
                                     <a href={pj.url} target="_blank">Ver proyecto</a>
                                 </div>
                             </div>

@@ -157,6 +157,10 @@ $theme-color: $light-color;
   left: 6%;
   z-index: 200;
 
+  img{
+    cursor: pointer;
+  }
+
   input{
     display: none;
   }
@@ -457,7 +461,6 @@ $theme-color: $light-color;
 
       .red-item{
         margin: 20px 0;
-        // padding-left: 20px;
         padding: 0 7%;
         display: flex;
         align-items: center;
@@ -473,6 +476,11 @@ $theme-color: $light-color;
         p{
           display: inline;
           padding-left: 10px;
+
+          a{
+            color: #000;
+            text-decoration: none;
+          }
         }
 
       }
@@ -709,32 +717,42 @@ $theme-color: $light-color;
       display: flex;
       justify-content: space-around;
       border: 1px solid #ccc;
+      background-color: #FFF;
+
       .c-p-header{
         padding: 0;
         display: flex;
         flex-direction: column;
         align-items: baseline;
         justify-content: center;
+
         .image-circle{
           display: none;
         }
+
         .name-text{
           padding: 0;
           margin-bottom: 20px;
+
           h4{
             font-size: 1.4rem;
             margin-bottom: 5px;
           }
+
           p{
             font-size: 1.1rem;
           }
+
         }
+
         .button-primary{
           display: block;
         }
+
       }
       .c-p-redes{
         border: none;
+
         .red-item{
           padding: 0;
         }
@@ -744,6 +762,7 @@ $theme-color: $light-color;
 
   .footer{
     padding: 80px 6% 0;
+
     .f-content{
       display: flex;
       justify-content: space-between;
@@ -940,7 +959,6 @@ $theme-color: $light-color;
 
     .c-panel{
       padding: 20px;
-      background-color: #FFF;
       border: none;
       border: 1px solid #DBDBDB;
     }
@@ -1003,6 +1021,11 @@ $theme-color: $light-color;
             svg{
               path{
                 fill: $theme-color;
+              }
+            }
+            p{
+              a{
+                color: $theme-color;
               }
             }
           }

@@ -18,7 +18,7 @@ const Contacto = () => {
                 <div className="c-p-redes">
                     <div className="red-item"><ICON.WHATSAPP fill={'#fff'} width={20} height={20} /><p>(51) 930 392 725</p></div>
                     <div className="red-item"><ICON.EMAIL fill={'#fff'} width={20} height={20} /><p>daitonmh100@gmail.com</p></div>
-                    <div className="red-item"><ICON.GLOBAL fill={'#fff'} width={20} height={20} /><p>www.dalthon.ml</p></div>
+                    <div className="red-item"><ICON.GLOBAL fill={'#fff'} width={20} height={20} /><p><a href="https://dalthon.ml/">dalthon.ml</a></p></div>
                 </div>
             </div>
         </div>
