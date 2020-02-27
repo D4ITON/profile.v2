@@ -13,7 +13,7 @@ const Contacto = () => {
                         <h4>Dalthon Mamani Hualpa</h4>
                         <p>Front-End Developer</p>
                     </div>
-                    <button className="button-primary">Download CV</button>
+                    <a href="https://drive.google.com/file/d/1Mlbv8VNxqogkQLvrn2f4_szODQVJ8NEp/view?usp=sharing" target="_blank" className="button-primary">Download CV</a>
                 </div>
                 <div className="c-p-redes">
                     <div className="red-item"><ICON.WHATSAPP fill={'#fff'} width={20} height={20} /><p>(51) 930 392 725</p></div>

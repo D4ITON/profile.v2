@@ -9,11 +9,6 @@ const Header = () => {
 
     const context = useContext(Context);
 
-    const downloadCVButton = () => {
-        console.log('Download Button');
-    }
-
-
     return (
         <React.Fragment>
             <div className="modal-container">
@@ -51,7 +46,7 @@ const Header = () => {
                     <p>Front-End Developer</p>
                 </div>
                 <div className="h-button">
-                    <button onClick={() => downloadCVButton()} className="button-primary">Download CV</button>
+                    <a href="https://drive.google.com/file/d/1Mlbv8VNxqogkQLvrn2f4_szODQVJ8NEp/view?usp=sharing" target="_blank" className="button-primary">Download CV</a>
                 </div>
             </div>
         </React.Fragment>
