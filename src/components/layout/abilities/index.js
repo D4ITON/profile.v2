@@ -17,7 +17,7 @@ const Abilities = () => {
                             abilities.map((item, index) => (
                                 (index < 3) ? (
                                     <div className="item" key={item.id}>
-                                        <div className="img"><img src={item.img} alt="image"/></div>
+                                        <div className="img"><img src={item.img} alt={item.title} /></div>
                                         <p>{item.title}</p>
                                     </div>
                                 ) : false ))
@@ -28,7 +28,7 @@ const Abilities = () => {
                             abilities.map((item, index) => (
                                 (index >= 3) ? (
                                     <div className="item" key={item.id}>
-                                        <div className="img"><img src={item.img} alt="image"/></div>
+                                        <div className="img"><img src={item.img} alt={item.title} /></div>
                                         <p>{item.title}</p>
                                     </div>
                                 ) : false ))

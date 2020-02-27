@@ -12,7 +12,7 @@ const Portafolio = () => {
                 {
                     projects.map(pj => (
                         <div className="pf-item" key={pj.id}>
-                            <div className="pf-item-img"><img src={pj.prev_img} alt={pj.title}/></div>
+                            <div className="pf-item-img"><img src={pj.image} alt={pj.title}/></div>
                             <div className="pf-item-body">
                                 <div>
                                     <h3 className="pf-item-title">{pj.title}</h3>

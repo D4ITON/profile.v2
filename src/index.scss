@@ -2,17 +2,7 @@
  *  Created by: Dalthon
  */
 
- @font-face {
-  font-family: 'Poppins';
-  src: url('./assets/fonts/Poppins-Regular.ttf');
-  src: local('Poppins Regular'), local('PoppinsRegular');
-}
-
-@font-face {
-  font-family: 'Lato';
-  src: url('./assets/fonts/Lato-Regular.ttf');
-  src: local('Lato Regular'), local('LatoRegular');
-}
+@import './App.css';
 
 $base-color: #1DB954;
 $light-color: #FAFAFA;
