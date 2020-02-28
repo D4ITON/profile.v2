@@ -14,11 +14,11 @@ const About = () => {
                     </div>
                 </div>
                 <div className="panel-img">
-                    <img src="https://dl.dropboxusercontent.com/s/wb296oygftocv5e/about.jpg?dl=0" alt="panel image"/>
+                    <img src="https://dl.dropboxusercontent.com/s/wb296oygftocv5e/about.jpg?dl=0" alt="panel"/>
                 </div>
                 <div className="panel-description">
                     <p>Soy un desarrollador de software web dedicado a aprender y poner en práctica todas mis habilidades en proyectos. Comprometido con las fechas de entrega y calidad en el desarrollo para su posterior escalabilidad. Estoy feliz de darte la bienvenida a mi sitio web :)</p>
-                    <a href="https://drive.google.com/file/d/1Mlbv8VNxqogkQLvrn2f4_szODQVJ8NEp/view?usp=sharing" target="_blank" className="button-primary">Download CV</a>
+                    <a href="https://drive.google.com/file/d/1Mlbv8VNxqogkQLvrn2f4_szODQVJ8NEp/view?usp=sharing" rel="noopener noreferrer" target="_blank" className="button-primary">Download CV</a>
                 </div>
             </div>
         </div>

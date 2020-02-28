@@ -21,7 +21,7 @@ const Portafolio = () => {
                                 <div className="pf-item-footer">
                                     <div className="pf-item-ft-category">
                                         {
-                                            (pj.categoria == 1 ) ? (
+                                            (pj.categoria === 1 ) ? (
                                                 <ICON.GLOBAL width={20} height={20} />
                                             ):(
                                                 <ICON.MOBILE width={20} height={20} />

@@ -12,16 +12,12 @@ const Header = () => {
         <React.Fragment>
             <div className="modal-container">
                 <label htmlFor="modal">
-                    {/* <button onClick={() => menuButton()}> */}
-                        <img src={menu_icon} alt="menu-icon"/>
-                    {/* </button> */}
+                    <img src={menu_icon} alt="menu-icon"/>
                 </label>
                 <input type="checkbox" name="modal" id="modal"/>
                 <div className="modal-content">
                     <label htmlFor="modal">
-                        {/* <button onClick={() => menuButton()}> */}
-                            <img src={menu_icon} alt="menu-icon"/>
-                        {/* </button> */}
+                        <img src={menu_icon} alt="menu-icon"/>
                     </label>
                     <p>Dalthon</p>
                     <a href="#about">Sobre mí</a>
@@ -38,14 +34,14 @@ const Header = () => {
 
             <div className="header">
                 <div className="h-image">
-                    <img src="https://dl.dropboxusercontent.com/s/gl8h35m3bscxz3i/mobile-fondo.jpg?dl=0" alt="profile image"/>
+                    <img src="https://dl.dropboxusercontent.com/s/gl8h35m3bscxz3i/mobile-fondo.jpg?dl=0" alt="profile"/>
                 </div>
                 <div className="h-text">
                     <h1>Dalthon Mamani Hualpa</h1>
                     <p>Front-End Developer</p>
                 </div>
                 <div className="h-button">
-                    <a href="https://drive.google.com/file/d/1Mlbv8VNxqogkQLvrn2f4_szODQVJ8NEp/view?usp=sharing" target="_blank" className="button-primary">Download CV</a>
+                    <a href="https://drive.google.com/file/d/1Mlbv8VNxqogkQLvrn2f4_szODQVJ8NEp/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="button-primary">Download CV</a>
                 </div>
             </div>
         </React.Fragment>

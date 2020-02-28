@@ -1,6 +1,5 @@
 import React from 'react';
 import abilities from './abilities';
-import img_react from '../../../assets/react.png';
 
 const Abilities = () => {
     
@@ -9,14 +8,13 @@ const Abilities = () => {
             <h2 className="title-section">Mis habilidades</h2>
             <div className="a-container">
                 <div className="a-c-logo-react-animated">
-                    {/* <img src={img_react} alt="react"/> */}
                     <div className="circles">
                         <div></div>
                         <div></div>
                         <div></div>
                         <span></span>
                     </div>
-                    <cite>created by: <a href="https://github.com/jkomyno" target="_blank" >Alberto Schiabel</a></cite>
+                    <cite>created by: <a href="https://github.com/jkomyno" rel="noopener noreferrer" target="_blank" >Alberto Schiabel</a></cite>
                 </div>
                 <div className="abilities-list">
                     <div className="group">
