@@ -40,7 +40,7 @@ const App = () => {
       console.log(currentTheme);
       setDarkTheme();
     }
-  }, [])
+  })
 
   
 
