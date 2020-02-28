@@ -2,7 +2,7 @@
  *  Created by: Dalthon
  */
 
-@import './App.css';
+@import './App.scss';
 
 $base-color: #1DB954;
 $light-color: #FAFAFA;
@@ -238,7 +238,8 @@ $theme-color: $light-color;
                 margin-bottom: 4px;
               }
 
-              p{
+              p{  
+                  color: #999999;
                   font-size: 12px;
                   margin: 0;
               }
@@ -276,8 +277,27 @@ $theme-color: $light-color;
   background-color: #FAFAFA;
 
   .a-container{
-    .a-aside{
-      display: none;
+    margin-top: 46px;
+
+    .a-c-logo-react-animated {
+      text-align: center;
+
+      .circles{
+        width: 150px;
+        height: 150px;
+        margin: auto;
+        margin-bottom: 8px;
+      }
+
+      cite{
+        font-size: 10px;
+        color: #999999;
+
+        a{
+          text-decoration: none;
+          color: #999999;
+        }
+      }
     }
 
     .abilities-list{
@@ -326,6 +346,7 @@ $theme-color: $light-color;
       box-shadow: 9px 9px 22px -8px rgba(0,0,0,0.29);
       border-radius: 10px;
       margin: 30px 0;
+      background-color: #FFF;
 
       .pf-item-img{
         width: 100%;
@@ -664,22 +685,32 @@ $theme-color: $light-color;
   }
   // abilities tablet
   .abilities{
+
     .a-container{
       padding: 0 6%;
       display: flex;
+      justify-content: space-between;
       margin-top: 16px;
-      .a-aside{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        img{
-          background-color: #fff;
+
+      .a-c-logo-react-animated {
+          margin: auto 0;
+
+        .circles{
+          width: 200px;
+          height: 200px;
+        }
+  
+        cite{
+          font-size: 10px;
         }
       }
+
       .abilities-list{
         margin: 0;
         display: flex;
+
       }
+
     }
   }
 
@@ -890,9 +921,17 @@ $theme-color: $light-color;
       padding: 0;
       justify-content: space-between;
 
-      .a-aside{
-        width: 45%;
-        justify-content: flex-start;
+      .a-c-logo-react-animated {
+          margin: auto 0;
+
+        .circles{
+          width: 250px;
+          height: 250px;
+        }
+
+        cite{
+          font-size: 12px;
+        }
       }
 
       .abilities-list{
@@ -900,6 +939,13 @@ $theme-color: $light-color;
 
         .group{
           width: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+
+          .item{
+            margin: 0;
+          }
         }
       }
     }
