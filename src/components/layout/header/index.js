@@ -1,8 +1,7 @@
 import React, { useContext } from 'react';
 import Context from '../../../utils/context';
 import menu_icon from '../../../assets/menu-icon.png';
-import sun_icon from '../../../assets/sun.png';
-import moon_icon from '../../../assets/moon.png';
+import * as ICON from '../../../assets/icons_svg';
 
 const Header = () => {
 
@@ -33,7 +32,7 @@ const Header = () => {
             </div>
 
             <div className="input-change-theme">
-                <label htmlFor="inputTheme"><img src={ !context.darkmode ? moon_icon : sun_icon  } /></label>
+                <label htmlFor="inputTheme">{ !context.darkmode ? <ICON.MOON width={20} height={21} /> : <ICON.SUN width={22.5} height={22.5} />  }</label>
                 <input type="checkbox" id="inputTheme" checked={context.darkmode} onChange={(e) => context.handleChangeDarkMode(e)} />
             </div>
 

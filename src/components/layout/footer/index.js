@@ -1,8 +1,5 @@
 import React from 'react';
-import logo_dm from '../../../assets/DM.png';
-import logo_linkedin from '../../../assets/linkedin.png';
-import logo_twitter from '../../../assets/twitter.png';
-import logo_github from '../../../assets/github.png';
+import * as ICON from '../../../assets/icons_svg';
 
 const Footer = () => {
 
@@ -13,7 +10,7 @@ const Footer = () => {
         <footer className="footer">
             <div className="f-content">
                 <div className="f-name">
-                    <img src={logo_dm} alt="Logo DM"/>
+                    <ICON.LOGOPROFILE width={60} height={30} />
                     <h4>Dalthon Mamani Hualpa</h4>
                     <p>Front-End Developer</p>
                 </div>
@@ -26,9 +23,9 @@ const Footer = () => {
                 <div className="f-hello">
                     <b>Di hola</b>
                     <div className="f-h-link">
-                        <a href="https://github.com/D4ITON"><img src={logo_github} alt="Logo Github"/></a>
-                        <a href="https://www.linkedin.com/in/dalthon-mamani-hualpa-816097161/"><img src={logo_linkedin} alt="Logo Linkedin"/></a>
-                        <a href="https://twitter.com/DalthonMamani"><img src={logo_twitter} alt="Logo Twitter"/></a>
+                        <a href="https://github.com/D4ITON"><ICON.GITHUB width={30} height={30} /></a>
+                        <a href="https://www.linkedin.com/in/dalthon-mamani-hualpa-816097161/"><ICON.LINKEDIN width={30} height={30} /></a>
+                        <a href="https://twitter.com/DalthonMamani"><ICON.TWITTER width={30} height={30} /></a>
                     </div>
                 </div>
             </div>

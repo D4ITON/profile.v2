@@ -28,7 +28,7 @@ const Portafolio = () => {
                                             )
                                         }
                                         <p>{pj.categoriaText}</p></div>
-                                    <a href={pj.url} target="_blank">Ver proyecto</a>
+                                    <a href={pj.url} rel="noopener noreferrer" target="_blank">Ver proyecto</a>
                                 </div>
                             </div>
                         </div>
