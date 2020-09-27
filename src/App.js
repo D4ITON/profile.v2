@@ -21,6 +21,7 @@ const App = () => {
   const setLightTheme = () => {
     setDarkMode(false)
     localStorage.removeItem('theme')
+    localStorage.removeItem('colorScheme')
   }
 
   const handleChangeDarkMode = (event) => {
@@ -30,16 +31,19 @@ const App = () => {
     } else {
       setLightTheme();
     }
-
   }
-
-  const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
   
+  const currentTheme = ( localStorage.getItem('theme') ) ? localStorage.getItem('theme') : null;
+  
+  
+
   useEffect(() => {
+
     if(currentTheme) {
-      console.log(currentTheme);
+      console.log('currentTheme =>' + currentTheme);
       setDarkTheme();
     }
+    
   })
 
   
@@ -51,7 +55,7 @@ const App = () => {
         handleChangeDarkMode: (event) => handleChangeDarkMode(event)
        }}
     >
-      <div className={ !darkMode ?'App lightTheme' : 'App darkTheme'} >
+      <div className={ !darkMode ? 'App lightTheme' : 'App darkTheme'} >
         <Header/>
         <About/>
         <Abilities/>
@@ -74,3 +78,5 @@ export default App;
  * creas el context provider
  * envias valores que son el estado la funcion de cambio
  */
+
+// if(window.matchMedia("(prefers-color-scheme: dark)").matches){
