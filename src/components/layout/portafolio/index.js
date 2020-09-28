@@ -4,6 +4,23 @@ import * as ICON from "../../../assets/icons_svg";
 import projects, { design_items } from "./projects";
 
 const Portafolio = () => {
+  /**
+   * Muestra el icono si es moble desktop o web
+   * @param {Number} categoryId
+   */
+  const showAppIcon = (categoryId) => {
+    switch (categoryId) {
+      case 1:
+        return <ICON.GLOBAL width={20} height={20} />;
+      case 2:
+        return <ICON.MOBILE width={20} height={20} />;
+      case 3:
+        return <ICON.DESKTOP width={15} height={15} />;
+      default:
+        break;
+    }
+  };
+
   return (
     <div className="portafolio" id="portafolio">
       <h2 className="title-section">Mi portafolio</h2>
@@ -22,11 +39,7 @@ const Portafolio = () => {
               </div>
               <div className="pf-item-footer">
                 <div className="pf-item-ft-category">
-                  {pj.categoria === 1 ? (
-                    <ICON.GLOBAL width={20} height={20} />
-                  ) : (
-                    <ICON.MOBILE width={20} height={20} />
-                  )}
+                  {showAppIcon(pj.categoria)}
                   <p>{pj.categoriaText}</p>
                 </div>
                 <a href={pj.url} rel="noopener noreferrer" target="_blank">

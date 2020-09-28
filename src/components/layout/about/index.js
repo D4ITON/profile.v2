@@ -23,7 +23,7 @@ const About = () => {
         </div>
         <div className="panel-description">
           <p>
-            Soy un desarrollador de software web dedicado a aprender y poner en
+            Desarrollador de software web dedicado a aprender y poner en
             práctica todas mis habilidades en proyectos. Comprometido con las
             fechas de entrega y calidad en el desarrollo para su posterior
             escalabilidad. Estoy feliz de darte la bienvenida a mi sitio web :)
