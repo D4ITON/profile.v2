@@ -31,4 +31,4 @@ Dalthon Mamani
 
 ## License
 
-MIT
+GPL-3.0 License
