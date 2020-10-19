@@ -31,7 +31,7 @@ const Contacto = () => {
           </div>
           <div className="red-item">
             <ICON.EMAIL fill={"#fff"} width={20} height={20} />
-            <p>daitonmh100@gmail.com</p>
+            <p>dalthonmh@gmail.com</p>
           </div>
           <div className="red-item">
             <ICON.GLOBAL fill={"#fff"} width={20} height={20} />
